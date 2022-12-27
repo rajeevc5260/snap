@@ -1,38 +1,52 @@
 .navbar {
-    margin: 10px 25px;
-  }
-  .navbar-brand {
-    margin-right: 40px;
-  }
-  .navbar li a {
-    color: hsl(0, 0%, 41%);
-    margin-inline: 10px;
-  }
-  .navbar li a:hover {
-    color: hsl(0, 0%, 8%);
-  }
-  .dropdown-menu img{
-    margin-right: 15px;
-  }
-  .navbar .btn {
-    color: hsl(0, 0%, 41%);
-  }
-  .navbar .log {
-    border: none;
-    margin-right: 20px;
-    transition: ease-in 200ms;
-  }
-  .navbar .log:hover {
-    color: hsl(0, 0%, 8%);
-  }
-  .navbar .register {
-    border: 2px solid hsl(0, 0%, 41%);
-    border-radius: 12px;
-    padding: 8px 15px;
-    transition: ease-in 200ms;
-  }
-  .navbar .register:hover {
-    border: 2px solid hsl(0, 0%, 8%);
-    color: hsl(0, 0%, 8%);
-  }
-  
+  margin: 10px 25px;
+}
+.navbar-brand {
+  margin-right: 40px;
+}
+.sidenav {
+  width: 280px;
+}
+li a {
+  color: hsl(0, 0%, 41%);
+  margin-inline: 10px;
+}
+li a:hover {
+  color: hsl(0, 0%, 8%);
+}
+.dropdown-menu img {
+  margin-right: 15px;
+}
+.btn {
+  color: hsl(0, 0%, 41%);
+  display: flex;
+}
+.log {
+  border: none;
+  margin-right: 20px;
+  transition: ease-in 200ms;
+}
+.log:hover {
+  color: hsl(0, 0%, 8%);
+}
+.register {
+  border: 2px solid hsl(0, 0%, 41%);
+  border-radius: 12px;
+  padding: 8px 15px;
+  transition: ease-in 200ms;
+}
+.register:hover {
+  border: 2px solid hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 8%);
+}
+.offcanvas-header button {
+  font-size: 30px;
+  color: #000;
+}
+.buttons .register {
+  padding: 8px 85px;
+}
+.buttons .log {
+  margin-left: 8px;
+  padding: 8px 85px;
+}

@@ -5,17 +5,21 @@
   align-items: center;
 }
 .home-Contents {
-    margin-left: 4rem;
-    margin-right: 2rem;
+  margin-left: 4rem;
+  margin-right: 2rem;
 }
 .home-Contents h1 {
   font-weight: 700;
   font-size: 70px;
 }
+.home-Contents span {
+  display: block;
+}
 .home-Contents p {
   font-size: 18px;
   color: hsl(0, 0%, 41%);
   margin-top: 1rem;
+  width: 400px;
 }
 .home-Contents .action {
   background-color: hsl(0, 0%, 8%);
@@ -32,6 +36,7 @@
 }
 .home-Contents .brands {
   margin-top: 6rem;
+  display: flex;
 }
 .home-Contents .brands img {
   margin-right: 40px;
@@ -39,9 +44,53 @@
 .home-banner {
   width: 40rem;
   height: 32rem;
-  /* background-color: aqua; */
   background-image: url(../../../assets/images/image-hero-desktop.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 24rem;
+}
+
+/* mobile view */
+@media (max-width: 768px) {
+  .home-main {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+  }
+  .home-Contents {
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .home-Contents h1 {
+    font-weight: 700;
+    margin-top: -250px;
+    font-size: 38px;
+    text-align: center;
+  }
+  .home-Contents span {
+    display: inline;
+  }
+  .home-Contents p {
+    text-align: center;
+    margin-top: 1rem;
+    margin-left: 2rem;
+  }
+  .home-Contents .brands {
+    margin-top: 4rem;
+    transform: scale(0.85);
+    margin-left: 15px;
+  }
+  .home-Contents .brands img {
+    margin-right: 35px;
+  }
+  .home-Contents .action {
+    margin-left: 10rem;
+  }
+
+  .home-banner {
+    margin-top: -10rem;
+    width: 55em;
+    height: 32rem;
+    background-image: url(../../../assets/images/image-hero-mobile.png);
+  }
 }

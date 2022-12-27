@@ -1,12 +1,44 @@
 <div class="snap-main">
     <!-- Navbar mobile toggle Content -->
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas offcanvas-end sidenav" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
+          <!-- <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5> -->
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <p>sample</p>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" routerLink="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Features
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="" ><img src="../../../assets/images/icon-todo.svg" height="17"> Todo List</a></li>
+                    <li><a class="dropdown-item" routerLink="" ><img src="../../../assets/images/icon-calendar.svg" height="17">Calender</a></li>
+                    <li><a class="dropdown-item" routerLink="" ><img src="../../../assets/images/icon-reminders.svg" height="17">Reminders</a></li>
+                    <li><a class="dropdown-item" routerLink="" ><img src="../../../assets/images/icon-planning.svg" height="17">Planning</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" routerLink=""  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Company
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" routerLink="" >History</a></li>
+                    <li><a class="dropdown-item" routerLink="" >Our Team</a></li>
+                    <li><a class="dropdown-item" routerLink="" >Blog</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link "  routerLink="" >Careers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" routerLink="" >About</a>
+                </li>
+              </ul>
+              <form class=" buttons">
+                <button class="btn log">Login</button> 
+                <button class="btn register" type="submit">Register</button>
+              </form>
         </div>
       </div>
   
@@ -14,7 +46,7 @@
       <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
           <a class="navbar-brand" routerLink="" >
-            <img src="../assets/images/logo.svg" alt="Bootstrap" width="75" height="22">
+            <img src="../assets/images/logo.svg" alt="Bootstrap" width="75" height="25">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
             <span class="navbar-toggler-icon"></span>
@@ -49,7 +81,7 @@
                 <a class="nav-link" routerLink="" >About</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex ">
               <button class="btn log">Login</button>
               <button class="btn register" type="submit">Register</button>
             </form>
